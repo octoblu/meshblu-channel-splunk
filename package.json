@@ -1,7 +1,8 @@
 {
   "name": "meshblu-channel-splunk",
   "repository": "octoblu/meshblu-channel-splunk",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "description": "Splunk Channel as Device",
   "main": "index.js",
   "scripts": {
     "start": "node command.js",
