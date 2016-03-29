@@ -1,6 +1,7 @@
 MeshbluHttp = require 'meshblu-http'
 _           = require 'lodash'
 {Plugin}    = require 'meshblu-splunk-event-collector/index'
+debug       = require('debug')('meshblu-channel-splunk:wrapper-controller')
 
 class GatebluPluginWrapperController
   received: (req, res) =>
@@ -16,7 +17,7 @@ class GatebluPluginWrapperController
       message = req.body.payload if req.body.payload?
 
       splunkPlugin.once 'message', (message) =>
-        console.log "sending meshblu message", message
+        debug "sending meshblu message", message
 
         meshblu.message message, (error) =>
           res.sendStatus 200

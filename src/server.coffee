@@ -7,6 +7,7 @@ cookieParser       = require 'cookie-parser'
 meshbluHealthcheck = require 'express-meshblu-healthcheck'
 MeshbluConfig      = require 'meshblu-config'
 Router             = require './router'
+debug              = require('debug')('meshblu-channel-splunk:server')
 
 class Server
   constructor: ({@disableLogging, @port, @serviceUrl}, {@meshbluConfig}={})->

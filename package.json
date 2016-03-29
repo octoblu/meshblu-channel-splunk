@@ -1,7 +1,7 @@
 {
-  "name": "gateblu-plugin-wrapper",
-  "repository": "octoblu/meshblu-splunk-channel",
-  "version": "1.0.0",
+  "name": "meshblu-channel-splunk",
+  "repository": "octoblu/meshblu-channel-splunk",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "start": "node command.js",
